@@ -4,6 +4,7 @@
         <p>{{patient.detail}}</p>
         <p>{{patient.mobile}}</p>
         <button @click="onDelete(patient.id)">delete</button>
+        <router-link :to="{ name: 'PatientDetails', params: {id: patient.id}}" >Edit</router-link>
     </div>
 </template>
 

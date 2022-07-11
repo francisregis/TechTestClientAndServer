@@ -1,7 +1,7 @@
 <template>
     <div>
         <div :key="patient.id" v-for="patient in patients">
-            <Patient @delete-patient="$emit('delete-patient', patient.id)"  :patient="patient"/>
+            <Patient @delete-patient="$emit('delete-patient', patient.id)" :patient="patient"/>
         </div>
     </div>
 </template>
